@@ -1,4 +1,16 @@
 📊 Segmentação de Clientes com RFM + K-Means para E-commerce
+
+## Índice  
+* [Descrição](#descrição)  
+* [Objetivos](#objetivos)  
+* [Como rodar](#como-rodar)  
+* [Resultados principais](#resultados-principais)  
+* [Metodologia](#metodologia)  
+* [Estrutura do repositório](#estrutura-do-repositório)  
+* [Tecnologias](#tecnologias)  
+* [Autora](#autora)  
+
+
 🧩 Descrição Geral
 
 Este projeto aplica metodologias de análise de clientes amplamente utilizadas no mercado — RFM (Recência, Frequência e Valor) e Clusterização via K-Means — para identificar padrões de comportamento em uma base de pedidos de um e-commerce fictício.
