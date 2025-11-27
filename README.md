@@ -1,14 +1,14 @@
 📊 Segmentação de Clientes com RFM + K-Means para E-commerce
 
-## Índice  
-* [Descrição](#descrição)  
-* [Objetivos](#objetivos)  
-* [Como rodar](#como-rodar)  
-* [Resultados principais](#resultados-principais)  
-* [Metodologia](#metodologia)  
-* [Estrutura do repositório](#estrutura-do-repositório)  
-* [Tecnologias](#tecnologias)  
-* [Autora](#autora)  
+## 📌 Índice
+- [Descrição Geral](#descrição-geral)
+- [Objetivos](#objetivos)
+- [Etapas Realizadas](#etapas-realizadas)
+- [Resultados e Insights](#resultados-e-insights)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Rodar o Projeto](#como-rodar-o-projeto)
+- [Autora](#autora)
+
 
 
 🧩 Descrição Geral
