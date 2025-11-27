@@ -159,6 +159,8 @@ Scikit-Learn
  ┣ 📄 requirements.txt
  ┗ 📄 rfm_kmeans.ipynb
 
+A análise de outliers mostrou uma cauda longa de vendas de alto valor, com 6–12 transações fora do padrão dependendo do método (Z-score ou IQR). Esses valores representam compras de ticket alto, não erros, e indicam um grupo de clientes premium que contribui desproporcionalmente para a receita. Eles foram mantidos porque são cruciais para entender comportamento, estratégias de upsell e clusterização.
+
 👩‍💻 Autora
 
 Helli — Data Analytics | UX | Branding | Automação
