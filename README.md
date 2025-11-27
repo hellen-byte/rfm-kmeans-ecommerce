@@ -161,6 +161,55 @@ Scikit-Learn
 
 A análise de outliers mostrou uma cauda longa de vendas de alto valor, com 6–12 transações fora do padrão dependendo do método (Z-score ou IQR). Esses valores representam compras de ticket alto, não erros, e indicam um grupo de clientes premium que contribui desproporcionalmente para a receita. Eles foram mantidos porque são cruciais para entender comportamento, estratégias de upsell e clusterização.
 
+1. Receita Líquida — Cauda longa forte (modelo típico de e-commerce)
+
+A média está acima da mediana (R$ 1.090 vs R$ 894), mostrando assimetria positiva.
+Tradução:
+➡️ a maior parte dos pedidos tem receita baixa/média
+➡️ poucos pedidos de ticket alto puxam o faturamento lá pra cima
+
+O CV de 0.75 confirma:
+➡️ o comportamento de compra é extremamente heterogêneo
+➡️ clientes e produtos têm valores MUITO diferentes entre si
+
+Insight: esse tipo de cauda longa é clássico em e-commerce e indica espaço para estratégias de upsell, combos e clusterização de clientes de alto valor (que você já fez no RFM/K-Means).
+
+2. Valor Unitário — Produtos bem distribuídos, mas com faixa de preço ampla
+
+Assimetria praticamente zero (skew = −0.01).
+➡️ a distribuição é equilibrada
+➡️ não existem produtos extremamente caros que distorcem o conjunto
+
+Mas o CV de 0.55 mostra:
+➡️ existe uma variação natural entre categorias (moda, beleza, eletrônicos…)
+➡️ o portfólio é diversificado e atinge vários bolsos
+
+Insight: ideal para campanhas segmentadas por faixa de preço.
+
+3. Quantidade — Clientes compram poucas unidades
+
+Média de 3 unidades por pedido.
+Quase simétrico.
+Variação moderada-alta.
+
+➡️ maioria compra entre 1 e 4 itens
+➡️ não existe compra em volume (B2B)
+➡️ comportamento típico de varejo B2C
+
+Insight: kits e bundles podem aumentar o AOV (Average Order Value).
+
+4. Frete — Política de frete ampla, variando por região/distância
+
+CV 0.56 mostra dispersão alta.
+Assimetria quase zero.
+
+➡️ existe política de frete variada
+➡️ possivelmente influenciada por regiões/categorias/peso
+
+Insight: dá para investigar frete por cidade no futuro — isso vira KPI de eficiência logística.
+
+O e-commerce apresenta uma distribuição de receita altamente assimétrica, com poucos pedidos de alto valor responsáveis por grande parte do faturamento. O portfólio é diversificado, com ampla variação de preços e compras em pequenas quantidades, típico de varejo B2C. A política de frete é heterogênea e merece análise regional. A partir dessas estatísticas, identificamos oportunidades diretas de otimização: segmentação de clientes de alto valor, kits de produtos para aumentar o ticket médio e revisão de fretes por cidade.
+
 👩‍💻 Autora
 
 Helli — Data Analytics | UX | Branding | Automação
