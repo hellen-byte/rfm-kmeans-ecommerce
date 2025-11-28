@@ -1,0 +1,220 @@
+**RELATÓRIO FINAL — Análise de Clientes com RFM \+ Clusterização (K-Means)**
+
+### ***Aplicado a E-commerce — Data Analytics \+ Machine Learning***
+
+## **📌 1\. Objetivo do Projeto**
+
+Este estudo tem como objetivo:
+
+* Identificar padrões de comportamento dos clientes de um e-commerce
+
+* Segmentar clientes usando **RFM (Recência, Frequência, Valor)**
+
+* Aplicar **K-Means** para encontrar perfis de compra
+
+* Gerar insights acionáveis para **aumentar LTV, reduzir churn e orientar estratégias comerciais**
+
+Projeto ideal para áreas de:  
+ **Marketing, Growth, CRM, BI, Produto e Gestão Comercial.**
+
+## **📌 2\. Pipeline do Projeto**
+
+1. **Geração/Simulação da Base de Dados**
+
+2. **Tratamento e Limpeza do Dataset**
+
+3. **Análise Exploratória (EDA)**
+
+4. **Análise Temporal e Sazonalidade**
+
+5. **Construção do RFM**
+
+6. **Clusterização com K-Means**
+
+7. **Interpretação dos Clusters**
+
+8. **Insights e Estratégias de Negócio**
+
+## **📌 3\. Análise Exploratória (EDA)**
+
+### **🔍 Principais estatísticas**
+
+* **Ticket Médio:** \~R$ 1.090
+
+* **Mediana:** R$ 894
+
+* **Distribuição assimétrica** (cauda longa à direita — poucos clientes gastam muito)
+
+* **12 outliers** identificados (representam clientes premium)
+
+### **🔍 Destaques das variáveis**
+
+| Métrica | Mín | Mediana | Média | Máx | Interpretação |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| receita\_liquida | 37 | 894 | 1.090 | 3.854 | Cauda longa, vendas esporádicas de alto valor |
+| valor\_unitario | 21 | 409 | 407 | 799 | Variação considerável de preços |
+| quantidade | 1 | 3 | 3,06 | 5 | Compras pequenas e recorrentes |
+| frete | 0,15 | 25 | 25 | 49 | Sem padrão linear com receita |
+
+## **📌 4\. Sazonalidade e Análises por Categoria/Cidade/Canal**
+
+### **🗓 Receita por mês**
+
+* **Pico:** Junho
+
+* **Queda:** Julho → novembro  
+   ➡ *indicando fragilidade de vendas no 2º semestre*
+
+### **🏙 Receita por cidade**
+
+1. Curitiba
+
+2. Salvador
+
+3. Belo Horizonte  
+    ➡ *mercados fortes, maior potencial para expansão local*
+
+### **🔌 Receita por canal**
+
+* Site: 57%
+
+* App: 32%
+
+* Marketplace: 19%  
+   ➡ *Site é o carro-chefe → foco em CRO e retenção*
+
+### **🛍 Receita por categoria**
+
+1. Moda
+
+2. Beleza
+
+3. Esporte  
+    ➡ *categorias de entrada e alto volume*
+
+## **📌 5\. Construção do RFM**
+
+RFM considera:
+
+* **Recência (R):** dias desde última compra
+
+* **Frequência (F):** total de compras
+
+* **Valor (V):** receita acumulada
+
+Cada cliente recebe uma pontuação de 1 a 5 que define seu perfil.
+
+## **📌 6\. Clusterização — K-Means**
+
+### **📌 Elbow Method**
+
+O ponto ideal foi **k \= 4 clusters**
+
+### **📌 Distribuição dos Clusters**
+
+| Cluster | Qtde |
+| ----- | ----- |
+| 3 | 127 |
+| 1 | 105 |
+| 0 | 95 |
+| 2 | 36 *(elite)* |
+
+### **📌 Perfil médio dos clusters**
+
+| Cluster | Recência | Frequência | Valor |
+| ----- | ----- | ----- | ----- |
+| 0 | 236 | 1.65 | 1.768 |
+| 1 | 69 | 3.81 | 4.002 |
+| 2 | 72 | 5.47 | 7.770 |
+| 3 | 68 | 1.94 | 1.753 |
+
+## **📌 7\. Interpretação dos Perfis de Clientes**
+
+### **🟢 Cluster 2 — TOP CLIENTES (VIP)**
+
+* Alta frequência
+
+* Altíssimo valor
+
+* Recentes  
+   **Estratégias:**  
+   ✔ Programa VIP  
+   ✔ Early Access  
+   ✔ Retenção máxima
+
+### **🟠 Cluster 1 — Frequent Buyers (bons clientes)**
+
+* Frequência alta
+
+* Valor acima da média  
+   **Estratégias:**  
+   ✔ Upsell  
+   ✔ Combos e kits  
+   ✔ Clube de fidelidade
+
+### **🔴 Cluster 3 — Recorrentes de Baixo Ticket**
+
+* Compram recentemente
+
+* Baixo valor acumulado  
+   **Estratégias:**  
+   ✔ Aumentar ticket  
+   ✔ Bundles progressivos  
+   ✔ Sugestões personalizadas
+
+### **🔵 Cluster 0 — Inativos / Dormindo**
+
+* Alta recência (não compram há muito tempo)
+
+* Baixa frequência  
+   **Estratégias:**  
+   ✔ Reativação  
+   ✔ Cupons agressivos  
+   ✔ Remarketing email/SMS
+
+## **📌 8\. Principais Insights de Negócio**
+
+### **🔥 1\. 5% dos clientes representam grande parte do faturamento**
+
+→ Prioridade em retenção VIP.
+
+### **🔥 2\. Alto volume de clientes de baixo ticket**
+
+→ Oportunidade para aumentar ticket médio.
+
+### **🔥 3\. Sazonalidade aponta queda no 2º semestre**
+
+→ Reforço urgente de calendário promocional.
+
+### **🔥 4\. Canal ‘Site’ domina**
+
+→ Investir em CRO e jornada de checkout.
+
+### **🔥 5\. Clientes inativos são parcela relevante**
+
+→ CRM deve focar reengajamento imediato.
+
+## **📌 9\. Conclusão**
+
+O uso combinado de **RFM \+ K-Means** entregou:
+
+✔ Segmentos claros e interpretáveis  
+ ✔ Estratégias diretas para aumentar LTV  
+ ✔ Base forte para CRM e Marketing  
+ ✔ Comportamentos-chave de compra  
+ ✔ Identificação dos clientes que realmente geram valor
+
+Este é um projeto completo que une:  
+ **Data Analytics \+ Negócio \+ UX \+ Machine Learning aplicado.**
+
+## **📌 10\. Repositório**
+
+📦 Código completo, dataset e notebook:  
+ 👉 [https://github.com/hellen-byte/rfm-kmeans-ecommerce](https://github.com/hellen-byte/rfm-kmeans-ecommerce)
+
+## **📌 11\. Contato**
+
+👩‍💻 Hellen Leal — Data Analyst | UX \+ Dados  
+ 🔗https://www.linkedin.com/in/hellenleal/  
+ 🐙 github.com/hellen-byte
+
