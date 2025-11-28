@@ -204,6 +204,25 @@ O uso combinado de **RFM \+ K-Means** entregou:
  ✔ Comportamentos-chave de compra  
  ✔ Identificação dos clientes que realmente geram valor
 
+🔥 Cluster 2 — Campeões (TOP 5%)
+
+“Grupo pequeno, altamente valioso, com frequência e ticket elevados. É o motor financeiro da empresa. Requer ações de retenção extremamente cuidadosas.”
+
+🔥 Cluster 1 — Bons clientes e frequentes
+
+“Compram com regularidade e têm boa receita total. Têm potencial real para migrar para o grupo de campeões.”
+
+🔥 Cluster 3 — Clientes de baixo ticket mas ativos
+
+“São compradores recentes, mas gastam pouco. Oportunidade de aumento de ticket médio.”
+
+🔥 Cluster 0 — Inativos
+
+“Grupo grande, baixa receita e alta recência. Prioridade para estratégias de reativação.”
+
+A segmentação K-Means revelou quatro grupos de clientes com padrões distintos. 
+Os Campeões representam a elite do faturamento e precisam de ações VIP; os Frequentes são excelentes candidatos para fidelização; os clientes de baixo ticket podem ser ativados com bundles e kits; e o grupo inativo exige campanhas específicas de reengajamento. Essa segmentação permite inteligência comercial real, reduzindo churn e aumentando o LTV.
+
 Este é um projeto completo que une:  
  **Data Analytics \+ Negócio \+ UX \+ Machine Learning aplicado.**
 
