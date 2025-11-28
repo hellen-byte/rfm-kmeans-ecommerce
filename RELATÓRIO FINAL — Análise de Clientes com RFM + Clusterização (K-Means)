@@ -223,6 +223,8 @@ O uso combinado de **RFM \+ K-Means** entregou:
 A segmentação K-Means revelou quatro grupos de clientes com padrões distintos. 
 Os Campeões representam a elite do faturamento e precisam de ações VIP; os Frequentes são excelentes candidatos para fidelização; os clientes de baixo ticket podem ser ativados com bundles e kits; e o grupo inativo exige campanhas específicas de reengajamento. Essa segmentação permite inteligência comercial real, reduzindo churn e aumentando o LTV.
 
+A análise de pricing mostra que algumas categorias são altamente sensíveis a preço, indicando que descontos aumentam demanda, enquanto outras são inelásticas, permitindo aumento de preço sem perda significativa de volume. Com isso, otimizamos margem e volume simultaneamente.
+
 Este é um projeto completo que une:  
  **Data Analytics \+ Negócio \+ UX \+ Machine Learning aplicado.**
 
