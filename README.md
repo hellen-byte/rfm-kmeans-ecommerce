@@ -210,6 +210,8 @@ Insight: dá para investigar frete por cidade no futuro — isso vira KPI de efi
 
 O e-commerce apresenta uma distribuição de receita altamente assimétrica, com poucos pedidos de alto valor responsáveis por grande parte do faturamento. O portfólio é diversificado, com ampla variação de preços e compras em pequenas quantidades, típico de varejo B2C. A política de frete é heterogênea e merece análise regional. A partir dessas estatísticas, identificamos oportunidades diretas de otimização: segmentação de clientes de alto valor, kits de produtos para aumentar o ticket médio e revisão de fretes por cidade.
 
+A clusterização do RFM identificou grupos distintos de clientes com padrões claros de comportamento. Clientes de alto valor apresentam tickets elevados mesmo com menor frequência; clientes ativos e frequentes concentram grande parte do volume; e clientes em risco têm alta recência e baixa frequência. Essa segmentação permite personalizar campanhas, otimizar investimentos e criar ações específicas para retenção, upsell e reativação.
+
 A clusterização K-Means revelou 4 perfis de clientes no e-commerce:
 ✔ Um grupo de clientes de alto valor e alta frequência (Champions)
 ✔ Clientes frequentes, porém de gasto moderado (Potenciais Leais)
