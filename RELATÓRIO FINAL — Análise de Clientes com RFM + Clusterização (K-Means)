@@ -225,6 +225,8 @@ Os Campeões representam a elite do faturamento e precisam de ações VIP; os Fr
 
 A análise de pricing mostra que algumas categorias são altamente sensíveis a preço, indicando que descontos aumentam demanda, enquanto outras são inelásticas, permitindo aumento de preço sem perda significativa de volume. Com isso, otimizamos margem e volume simultaneamente.
 
+O modelo Prophet identificou uma tendência consistente de vendas com padrão semanal bem definido. A previsão para os próximos 90 dias mostra crescimento moderado com picos recorrentes próximos ao final da semana. Isso ajuda a empresa a planejar estoque, logística, campanhas e fluxo de caixa.
+
 Este é um projeto completo que une:  
  **Data Analytics \+ Negócio \+ UX \+ Machine Learning aplicado.**
 
